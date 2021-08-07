@@ -1,11 +1,13 @@
+# CollatzSequence
+# Objective: When entering in any number, the Collatz Sequence will evaluate down to 1.
+
 def collatz():
-    #number = int(input("Enter number: "))
 
     try:
         number = int(input("Enter number: "))
 
         while True:
-            if number == 1:
+            if number == 1 or number == 0:
                 break
 
             elif number % 2 == 0:
@@ -21,19 +23,3 @@ def collatz():
 
 
 collatz()
-
-'''
-number = int(input("Enter number: "))
-
-while True:
-    if number == 1:
-        break
-
-    elif number % 2 == 0:
-        number = number // 2
-        print(number)
-
-    elif number % 2 == 1:
-        number = 3 * number + 1
-        print(number)
-'''
